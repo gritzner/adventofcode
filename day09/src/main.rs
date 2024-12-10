@@ -18,7 +18,7 @@ fn main() {
         let i = if i % 2 == 0 { (i / 2) as i64 } else { -1 };
         blocks.append(&mut vec![i; n]);
     }
-    let mut backup = blocks.clone();
+    let backup = blocks.clone();
     
     let mut i = 0;
     while i < blocks.len() {

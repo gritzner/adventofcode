@@ -37,7 +37,7 @@ fn next_pos(contents: &Vec<&str>, obstacle: Option<(isize, isize)>, pos: (isize,
 }
 
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day06/input.txt").expect("Should have been able to read the file");
     let contents: Vec<_> = contents.split("\n").filter(|line| !line.is_empty()).collect();
 
     let mut initial_pos = None;

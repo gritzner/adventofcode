@@ -1,5 +1,5 @@
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day02/input.txt").expect("Should have been able to read the file");
     let mut safe = 0;
     let mut safe_without_dampener = 0;
     for line in contents.lines() {

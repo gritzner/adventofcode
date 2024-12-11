@@ -1,7 +1,7 @@
 use regex::Regex;
 
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day03/input.txt").expect("Should have been able to read the file");
 
     let re = Regex::new(r"do\(\)").expect("regular expression compilation failed");
     let mut enabled = vec![0];

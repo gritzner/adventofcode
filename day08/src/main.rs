@@ -1,7 +1,7 @@
 use std::collections::{BTreeMap, BTreeSet};
 
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day08/input.txt").expect("Should have been able to read the file");
 
     let mut antennae = BTreeMap::new();
     let mut height = 0;

@@ -10,7 +10,7 @@ fn checksum(blocks: &Vec<i64>, s: &str) {
 }
 
 fn main() {
-    let content = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let content = std::fs::read_to_string("day09/input.txt").expect("Should have been able to read the file");
     let content = content.split("\n").next().expect("Input incomplete");
 
     let mut blocks = Vec::new();

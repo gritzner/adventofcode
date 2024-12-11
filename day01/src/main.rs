@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day01/input.txt").expect("Should have been able to read the file");
     let mut left = Vec::new();
     let mut right = Vec::new();
     let mut right_counts = BTreeMap::new();

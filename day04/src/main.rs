@@ -1,5 +1,5 @@
 fn main() {
-    let contents = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let contents = std::fs::read_to_string("day04/input.txt").expect("Should have been able to read the file");
     let matrix: Vec<_> = contents.split("\n").filter(|line| !line.is_empty()).collect();
     let mut count = 0;
     let mut x_count = 0;

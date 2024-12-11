@@ -1,7 +1,7 @@
 use std::collections::BTreeSet;
 
 fn main() {
-    let content = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let content = std::fs::read_to_string("day10/input.txt").expect("Should have been able to read the file");
     let map: Vec<_> = content
         .split("\n")
         .filter(|line| !line.is_empty())

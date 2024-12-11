@@ -20,7 +20,7 @@ fn blink(stone: usize) -> (usize, Option<usize>) {
 }
 
 fn main() {
-    let content = std::fs::read_to_string("input.txt").expect("Should have been able to read the file");
+    let content = std::fs::read_to_string("day11/input.txt").expect("Should have been able to read the file");
     let stones_vec: Vec<_> = content
         .split("\n")
         .next()

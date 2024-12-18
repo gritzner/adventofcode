@@ -95,7 +95,7 @@ fn main() {
         .map(|line| Vec2::from_string(line))
         .collect::<Vec<_>>();
 
-    
+    // modified the puzzle input to include the map size and number of walls to drop for part one as header for easier testing
     let size = content.remove(0);
     let num_walls = content.remove(0);
     

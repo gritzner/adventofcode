@@ -103,7 +103,7 @@ fn main() {
 
     let mut a = 0;
     let mut b = content.len() - 1;
-    while a < b {
+    while a <= b {
         let m = (a + b) / 2;
         if get_num_steps(&size, &content, m) == 0 {
             b = m - 1;
@@ -111,6 +111,10 @@ fn main() {
             a = m + 1;
         }
     }
+    while get_num_steps(&size, &content, b) > 0 {
+        b += 1;
+    }
+    b -= 1;
     let pos = content[b];
     println!("[part two] coordinates = {},{}", pos.x, pos.y);
 }

@@ -20,6 +20,7 @@ Cargo.lock
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+.DS_Store
 input.txt
 day14/easter_egg.txt
 day24/fixes.txt

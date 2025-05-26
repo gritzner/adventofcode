@@ -1,6 +1,5 @@
 use std::{cmp::Ordering, collections::BTreeMap};
 
-#[derive(Debug)]
 struct Hand {
     cards: [usize; 5],
     poker_type: usize,
